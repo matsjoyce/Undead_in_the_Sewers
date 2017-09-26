@@ -1,17 +1,16 @@
 --! [store_shroud]
 
-local function store_shroud(args)
+function wesnoth.wml_actions.store_shroud(args)
 	local team_num = args.side or helper.wml_error("[store_shroud] expects a side= attribute.")
 	local storage = args.variable or helper.wml_error("[store_shroud] expects a variable= attribute.")
 	local team = wesnoth.get_side(team_num)
 	local current_shroud = team.__cfg.shroud_data
 	wesnoth.set_variable(storage,current_shroud)
 end
-wesnoth.register_wml_action("store_shroud",store_shroud)
 
 --! [set_shroud]
 
-local function set_shroud(args)
+function wesnoth.wml_actions.set_shroud(args)
 	local team_num = args.side or helper.wml_error("[store_shroud] expects a side= attribute.")
 	local shroud = args.shroud_data or helper.wml_error("[store_shroud] expects a shroud_data= attribute.")
 	if shroud == nil then
@@ -33,4 +32,3 @@ local function set_shroud(args)
 		end
 	end
 end
-wesnoth.register_wml_action("set_shroud",set_shroud)
