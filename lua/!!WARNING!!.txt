@@ -1,0 +1,1 @@
+Do not try and edit the files in this folder unless you're sure you know what you're doing, since the game requires these files to define the custom WML tags used in the campaign. THESE FILES ARE NOT WRITTEN IN WML. Unless you have a decent understanding of the Lua scripting language, you should not edit the files in this folder.

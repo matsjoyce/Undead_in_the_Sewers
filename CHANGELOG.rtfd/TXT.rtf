@@ -1,0 +1,239 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf290
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\vieww18000\viewh17400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\fs48 \cf0 What's next:\
+\
+Definitely:\
+\
+- More inventory items. Junk, useful items, mystery items, etc.\
+- Inventory support for special items. Special items (such as keys) will be viewable in a separate section of the inventory menu.\
+- More achievements to unlock.\
+- Random blah.\
+- Stretchy boing-boings.\
+- Refrigerated toad blood.\
+- Santa Claus incarnate.\
+- Three and a half presidential candidates.\
+- Spinach poptarts.\
+- Awkward moments\
+- Fuzzy pink bunny rabbits.\
+- I think that's about it\'85\
+\
+Possibly:\
+\
+- Create a loot-dropping system for enemies\
+\
+\
+\
+TODO CODE:\
+- Remove default attacks from all unit .cfg's\
+- Create a portal system that will allow you to quickly travel between Weldyn and deeper sewer levels\
+- Add Borran Blademaster and Daethyn True-Aim's shops (?)\
+- Add in the stuff for the south-east room (the one with the runes) in the second sewer level (see Username/Library/Application Support/Wesnoth 1.9/data/add-ons/Undead_in_the_Sewers/odds & ends/odds_&_ends.cfg for what I've got so far)\
+\
+TODO GRAPHICS:\
+- Need portrait for male/female human shaman\
+- Need aquatic baseframes for all classes\
+- Need lotsa lotsa more animations for unit attacks, defense, special abilities, etc.\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 ###############################################################################\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs24 \cf0 {{\NeXTGraphic action.png \width440 \height440
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs48 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 > Version 0.4.7\
+	> Code\
+		> Dropping some items now causes an image representing the dropped item to appear for the duration of the level on the location whereto player dropped the item (hopefully the player will be able to come back to those items later and pick them up, even if he/she leaves and comes back to the level)\
+		> More powerful items now have minimum levels of a corresponding skill needed in order to equip them (e.g., a greatsword requires the player to have level 5 or higher of the melee weapon skill in order for the player to be able to equip that item)\
+		> It is now possible to assign traits to your character in the character setup scenario\
+		> The player no longer receives random traits\
+		> Corrected the capitalization errors in the scenario map directories in Sewer_level_1.cfg and Sewer_level_3.cfg that was preventing the scenarios from loading on certain Unix-based operating systems\
+		> The smithy's shop interface is now divided into submenus (helmets, armor, melee weapons and ranged weapons) for better organization\
+		> Added all skills (not all of them have an effect yet, however)\
+		> Standardized the text formatting across the inventory and shop interfaces\
+		> Fixed a bug that gave you 100 gold at the start of some levels if you entered them with a gold count of 0\
+		> Fixed some capitalization errors in potion names\
+		> Added more inventory items, including ranged weapons\
+		> Ran wmlindent and wmlscope on most of the campaign, code should be much cleaner and neater now\
+		> Removed a debugging moveto event from 01_Weldyn_1.cfg\
+	> Graphics\
+		> Added option icons for using/equipping and dropping items from the inventory\
+	> Misc\
+		> Reduced the amount of sewage tiles in the first two level maps, since it was creating impossible combat situations and dead ends\
+		> Fixed some formatting issues in the changelog\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs24 \cf0 {{\NeXTGraphic warrior.png \width1440 \height1440
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs48 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 > Version 0.4.5\
+	> Code\
+		> The inventory is now much more sophisticated, players can equip, unequip, and drop items (which actually affect the character's stats) from the inventory and character menus (both accessible through the right-click menu)\
+		> Added maximum inventory weight value that limits the amount of weight you can carry in your inventory. Each inventory item now has a certain weight value that contributes to the total weight of your inventory. If you try to add an item whose weight would violate your maximum inventory weight limit, you won't be able to do so. The inventory weight limit can be raised by increasing your character's strength (which is the one and only advancement option right now, but it's also dirt cheap)\
+		> Added a smithy shop to Weldyn, where you can purchase and sell armor and weapons\
+		> Added a number of weapons and armor items to the game\
+		> It is now possible to sell certain inventory items to the potionmaster\
+		> The player now has unlimited moves in Weldyn and the trophy hall\
+		> Fixed a bug that allowed the player to access the potion shop's inventory only once each time the scenario was loaded\
+		> Added class descriptions to the setup scenario\
+		> Macro-ed the potion shop and restructured the code\
+		> Replaced the file 'buy.ogg' with the core 'gold.ogg'\
+		> Konrad is no longer renamable\
+		> Keldyn the Ratcatcher is no longer renamable\
+		> Daethyn True-Aim is no longer renamable\
+		> Borran Blademaster is no longer renamable\
+		> The PC is no longer renamable\
+		> Fixed a bug that allowed the player to view the zombie slayer achievement message in the trophy hall by moving to the place the trophy appears when obtained, even if the player hadn't actually obtained the trophy yet\
+		> Reformatted the potion shop's buying interface\
+		> Removed the debug warning from the setup scenario, since that issue is now resolved\
+		> Fixed a bug that allowed healing potions to restore you to full health instead of adding 30 hitpoints\
+		> New text domain "wesnoth-Undead_in_the_Sewers", deprecated the old text domain "wesnoth-UitS"\
+		> Updated and reformatted the campaign credits\
+		> Fixed missing campaign difficulty menu image\
+		> Fixed a bug that prevented any orcish class from changing from terrestrial to aquatic movetypes on docks\
+		> Elvish classes now have better defense on flat and cave terrain, in keeping with the elvish class description\
+		> Restructured a number of scenario-specific variables so that they are contained within a central variable with a name corresponding to the ID value of the scenario\
+		> Code cleanup\
+		> Walking Corpses now have a chance of dropping loot (1 in 10 chance of dropping 5 coins, 1 in 10 chance of dropping 10 coins) when they die\
+		> Disabled summoning, as it was only an experiment in the first place, and was getting in the way of proper gameplay. It will probably be brought back later as one of the special powers of the shaman class\
+		> In keeping with the introductory story, the starting time in Weldyn is now afternoon (when it would be hottest), rather than morning (when it would be cooler)\
+		> All races now have the exact same resistances\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs24 \cf0 {{\NeXTGraphic sworded.png \width1440 \height1440
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs48 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 > Version 0.3.4\
+	> Code\
+		> Implemented a simple PC set-up scenario (complete with custom music provided by Telaron) that precedes the actual campaign and allows players to set up a custom PC\
+		> Implemented 4 human classes: Warrior (male only), Sorcerer (male and female variations), Rogue (male only), and Shaman (male and female variations)\
+		> The potion shop's actual buying interface is now a sub menu that branches off from what will eventually be the main conversation menu for the shop owner\
+		> Added a 'buy' sound effect for the potion shop\
+		> Significant re-write of the dialogue throughout the game\
+		> A number of NPC's no longer have idle animations, due to visual conflicts with TC values\
+		> Fixed some problems where the screen would start on the wrong place on the map when the scenario loaded and would have to then scroll to the correct place\
+		> The player now receives full hitpoints whenever he/she returns to Weldyn (the earlier implementation of 'full-healing-when-returning-to-Weldyn' was no longer working, for some reason)\
+		> Implemented the experimental achievement "Zombie Slayer", which the player receives after killing ten walking corpses\
+		> Added a 'trophy hall' in Weldyn, which you can visit in order to see your trophies\
+		> Healing potions no longer cure poison\
+		> Added sound effects for unlocking/opening gates\
+		> Added an introduction for the campaign\
+		> Added price a evaluation stat to the potion shop in Weldyn\
+	> Graphics\
+		> New sprite for King Konrad\
+		> The potion merchant now has a different portrait that better portrays his character\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs24 \cf0 {{\NeXTGraphic shf2.png \width1440 \height1440
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs48 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 > Version 0.3\
+	> Code\
+		> Added a second sewer level\
+		> Added a potion shop in Weldyn\
+		> The player now receives full healing whenever he/she returns to Weldyn\
+		> Added curing potions\
+		> Konrad now gives the player 2 curing potions as well as 2 healing potions and 2 movement potions at the start of the campaign\
+		> Restructured and reformatted the inventory\
+		> Added a sound effect for potion use\
+		> Rephrased and clarified areas of the in-game help\
+		> Added sound sources for lit braziers\
+		> Fixed a bug that allowed Borran Blademaster to move when the player selected him\
+		> Various dialogue fixes and rewrites\
+		> Added to/fixed/updated Delfador's random hints/nonsense dialogue\
+		> Significant code cleanup, including macro-ing some redundant code across the sewer scenarios, such as 'Stupid's locomotion transition' code, NPC spawn checks, and the 'dangerous sewage' code\
+	> Graphics\
+		> Gave the player a new terrestrial avatar (the old water avatar is still there, but will be replaced eventually)\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs24 \cf0 {{\NeXTGraphic charybdis.png \width1440 \height1440
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs48 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 > Version 0.2.6\
+	> Code\
+		> Fixed a number of bugs that were causing further saved game corruption\
+		> Expanded the first sewer level by finishing the south-east tunnel\
+		> The player now receives two movement potions and two health potions in the beginning of the campaign\
+		> Corrected Keldyn's movement path from the sewer grate to the fortress so that he stays on the path and doesn't move over any villages\
+	> Graphics\
+		> Restored NPC ellipses, because their removal was causing bugs\
+		> Gave movement potions a new inventory icon\
+	> Other\
+		> Updated & revised the campaign description\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\fs24 \cf0 {{\NeXTGraphic stupid-aquatic.png \width1440 \height1440
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\fs48 \cf0 \
+> Version 0.2.5\
+	> Code\
+		> Added support for movement potions\
+		> Fixed shroud storage bug that was causing corrupt saved games\
+		> The player's health is no longer restored when you enter a new level\
+		> General code cleanup\
+	> Graphics\
+		> Changed the ambient lighting settings so that the first sewer level is darker\
+	> Other\
+		> Reformatted the changelog\
+		> Rephrased parts of '!!WARNING!!.txt' in the Lua folder\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs24 \cf0 {{\NeXTGraphic hulking_undead.png \width1440 \height1440
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs48 \cf0 		
+\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b0 \cf0 > Version 0.2\
+	> Code\
+		> Added stored shroud data function\
+		> Added a simplistic inventory, accessible through the right-click menu\
+		> Added a help menu, accessible through the right-click menu\
+		> Added a summoning system, accessible through the right-click menu\
+		> Added the NPC "Borran Blademaster" to the first level\
+		> Added temporary dialogue for some of the NPC's in the first level, including Keldyn the Ratcatcher, Daethyn True-Aim, and Borran Blademaster\
+		> Added a wizard tower that will eventually allow you to learn and improve magical skills\
+		> Added object: Health potion (restores 30 hp)\
+	> Graphics\
+		> Changed the TC value of all units except Stupid to blue in the first scenario, to prevent the player from thinking he/she can control NPC's\
+		> Deleted all units' ellipses except the protagonist's, since they did not change color with the change I applied to the units' TC values and could potentially confuse the player\
+		> Changed the color values of the time setting in the second scenario so that the map has a darker ambient lighting\
+		> Added missing scenery\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs24 \cf0 {{\NeXTGraphic konrad-commander.png \width1440 \height1440
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs48 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 > Version 0.1\
+	> Creation}
