@@ -1,0 +1,3 @@
+#!/bin/sh
+
+wesnoth --log-debug=wml -c Undead_in_the_Sewers  --campaign-difficulty 1 --debug
