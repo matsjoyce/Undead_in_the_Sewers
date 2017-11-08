@@ -7,8 +7,8 @@ function wesnoth.wml_actions.store_shroud(args)
 end
 
 function wesnoth.wml_actions.set_shroud(args)
-    local team_num = args.side or helper.wml_error("[store_shroud] expects a side= attribute.")
-    local shroud = args.shroud_data or helper.wml_error("[store_shroud] expects a shroud_data= attribute.")
+    local team_num = args.side or helper.wml_error("[storeet_shroud] expects a side= attribute.")
+    local shroud = args.shroud_data or helper.wml_error("[set_shroud] expects a shroud_data= attribute.")
     if shroud == nil then
         helper.wml_error("[set_shroud] was passed a nil shroud string")
     elseif string.sub(shroud,1,1)~="|" then
