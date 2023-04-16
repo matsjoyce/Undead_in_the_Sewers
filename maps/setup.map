@@ -1,12 +1,12 @@
 border_size=1
 usage=map
 
-Xol, Xol, Xol, Xos, Xos, Xos, Xol, Xos, Xos, Xos, Xol, Xol, Xol
-Xos, Xol, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Xol, Xol
+Xos^Efs, Xos^Efs, Xos^Efs, Xos, Xos, Xos, Xos^Efs, Xos, Xos, Xos, Xos^Efs, Xos^Efs, Xos^Efs
+Xos, Xos^Efs, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Xos^Efs, Xos^Efs
 Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Xos
 Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Xos
 Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Ch, Iwr, Iwr, Iwr, Iwr, Iwr, Xos
 Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Xos
 Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Xos
-Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Xol
-Xos, Xol, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xol, Xos, Xol, Xos
+Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Iwr, Xos^Efs
+Xos, Xos^Efs, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos^Efs, Xos, Xos^Efs, Xos
