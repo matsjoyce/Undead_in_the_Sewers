@@ -1,16 +1,13 @@
-border_size=1
-usage=map
-
 Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu
 Xu, Xu, Ur, Uu, Uu, Xu, Xu, Xu, Ur, Ur, Ur, Xu, Xu, Xu, Xu, Xu, Urb, Xu, Urb, Xu, Urb, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Urb, Xu, Urb, Xu, Urb, Xu, Uue, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu
-Xu, Uu, Ur, Ur, Ur, Xu, Xu, Xu, Uu^Uf, Ur, Ur, Xu, Xu, Xu, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Xu, Xu, Xu, Xu, Urb, Urb, Urb, Xu, Urb, Urb, Ww, Qxu, Ww, Urb, Xu, Xu, Xu, Xu, Xu, Xu, Xu
-Xu, Ur, Ur, Ur, Ur, Uu, Xu, Uu^Uf, Uu^Uf, Uu^Emf, Ur, Uu, Uu^Emf, Uu^Emf, Uu, Xu, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Ww, Xu, Xu, Xu, Urb, Urb, Xu, Urb, Urb, Urb, Wwf, Wwf, Wwf, Uue, Xu, Urb, Urb, Urb, Xu, Xu, Xu, Xu
-Xu, Xu, Xu, Xu, Xu, Ur, Xu, Xu, Uu^Uf, Uu^Emf, Ur, Uu, Ur, Ur, Xu, Xu, Xu, Urb, Urb, Urb, Urb, Urb, Urb, Ww, Urb, Ww, Ww, Urb, Wwf, Urb, Xu, Xu, Ww, Ww, Wwf, Wwf, Urb, Xu, Xu, Xu, Urb, Xu, Xu, Xu, Xu, Xu
-Xu, Xu, Uu^Emf, Uu^Uf, Ur, Ur, Xu, Xu, Uu^Emf, Xu, Ur, Ur, Ur, Uu^Emf, Xu, Xu, Urb, Urb, Ww, Urb, Ww, Xu, Ww, Ww, Urb, Urb, Urb, Ww, Xu, Xu, Ww, Ww, Ww, Urb, Urb, Wwf, Xu, Xu, Urb, Urb, Xu, Xu, Xu, Xu, Xu, Xu
-Xu, Xu, Uu^Uf, Uu^Uf, Ur, Xu, Uu, Uu^Uf, Ur, Ur, Ur, Ur, Ur, Ur, Xu, Xu, Urb, Ww, Xu, Ww, Urb, Wwf, Urb, Ww, Xu, Urb, Urb, Urb, Ww, Xu, Urb, Urb, Urb, Ww, Urb, Xu, Xu, Urb, Urb, Xu, Xu, Xu, Urb, Xu, Xu, Xu
+Xu, Uu, Urb, Ur, Ur, Xu, Xu, Xu, Tb^Tf, Ur, Ur, Xu, Xu, Xu, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Xu, Xu, Xu, Xu, Urb, Urb, Urb, Xu, Urb, Urb, Ww, Qxu, Ww, Urb, Xu, Xu, Xu, Xu, Xu, Xu, Xu
+Xu, Ur, Ur, Ur, Ur, Uu, Xu, Tb^Tf, Tb^Tf, Uu^Emf, Ur, Uu, Uu^Emf, Uu^Emf, Uu, Xu, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Ww, Xu, Xu, Xu, Urb, Urb, Xu, Urb, Urb, Urb, Wwf, Wwf, Wwf, Uue, Xu, Urb, Urb, Urb, Xu, Xu, Xu, Xu
+Xu, Xu, Xu, Xu, Xu, Ur, Xu, Xu, Tb^Tf, Uu^Emf, Ur, Uu, Ur, Ur, Xu, Xu, Xu, Urb, Urb, Urb, Urb, Urb, Urb, Ww, Urb, Ww, Ww, Urb, Wwf, Urb, Xu, Xu, Ww, Ww, Wwf, Wwf, Urb, Xu, Xu, Xu, Urb, Xu, Xu, Xu, Xu, Xu
+Xu, Xu, Uu^Emf, Tb^Tf, Ur, Ur, Xu, Xu, Uu^Emf, Xu, Ur, Ur, Ur, Uu^Emf, Xu, Xu, Urb, Urb, Ww, Urb, Ww, Xu, Ww, Ww, Urb, Urb, Urb, Ww, Xu, Xu, Ww, Ww, Ww, Urb, Urb, Wwf, Xu, Xu, Urb, Urb, Xu, Xu, Xu, Xu, Xu, Xu
+Xu, Xu, Tb^Tf, Tb^Tf, Ur, Xu, Uu, Tb^Tf, Ur, Ur, Ur, Ur, Ur, Ur, Xu, Xu, Urb, Ww, Xu, Ww, Urb, Wwf, Urb, Ww, Xu, Urb, Urb, Urb, Ww, Xu, Urb, Urb, Urb, Ww, Urb, Xu, Xu, Urb, Urb, Xu, Xu, Xu, Urb, Xu, Xu, Xu
 Xu, Uu^Emf, Uu^Emf, Uu, Uu, Ur, Ur, Ur, Ur, Ur, Ur, Ur, Ur, Uu, Xu, Xu, Wwf, Wwf, Xu, Xu, Urb, Urb, Urb, Ww, Xu, Xu, Ww, Ww, Urb, Wwf, Urb, Urb, Urb, Ww, Wwf, Xu, Xu, Urb, Xu, Xu, Urb, Urb, Urb, Xu, Xu, Xu
-Xu, Xu, Uu^Uf, Uu^Emf, Uu, Ur, Uu, Ur, Uu^Emf, Uu, Uu, Uu, Uu^Uf, Uu^Emf, Xu, Urb, Urb, Wwf, Urb, Urb, Urb, Urb, Wwf, Wwf, Urb, Ww, Ww, Ww, Urb, Wwf, Wwt, Urb, Urb, Xu, Urb, Wwf, Xu, Urb, Urb, Urb, Xu, Urb, Urb, Urb, Xu, Xu
-Xu, Xu, Xu, Xu, Xu, Ur, Xu, Uu^Uf, Uu^Emf, Uu^Emf, Xu, Xu, Xu, Xu, Xu, Urb, Ww, Wwf, Ww, Urb, Xu, Xu, Urb, Urb, Urb, Urb, Ww, Urb, Urb, Xu, Wwt, Urb, Urb, Urb, Urb, Ww, Xu, Xu, Xu, Xu, Xu, Urb, Urb, Xu, Xu, Xu
+Xu, Xu, Tb^Tf, Uu^Emf, Uu, Ur, Uu, Ur, Uu^Emf, Uu, Uu, Uu, Tb^Tf, Uu^Emf, Xu, Urb, Urb, Wwf, Urb, Urb, Urb, Urb, Wwf, Wwf, Urb, Ww, Ww, Ww, Urb, Wwf, Wwt, Urb, Urb, Xu, Urb, Wwf, Xu, Urb, Urb, Urb, Xu, Urb, Urb, Urb, Xu, Xu
+Xu, Xu, Xu, Xu, Xu, Ur, Xu, Tb^Tf, Uu^Emf, Uu^Emf, Xu, Xu, Xu, Xu, Xu, Urb, Ww, Wwf, Ww, Urb, Xu, Xu, Urb, Urb, Urb, Urb, Ww, Urb, Urb, Xu, Wwt, Urb, Urb, Urb, Urb, Ww, Xu, Xu, Xu, Xu, Xu, Urb, Urb, Xu, Xu, Xu
 Xu, Xu, Uu^Emf, Xu, Xu, Ur, Xu, Xu, Xu, Xu, Urb, Xu, Urb, Xu, Xu, Ww, Ww, Urb, Urb, Ww, Wwf, Qxu, Urb, Urb, Urb, Ww, Ww, Urb, Urb, Urb, Wwf, Wwf, Ww, Ww, Xu, Xu, Urb, Urb, Urb, Xu, Xu, Xu, Urb, Urb, Xu, Xu
 Xu, Uh, Urb, Urb, Uu, Ur, Xu, Xu, Uu^Emf, Uu, Wwf, Qxu, Urb, Qxu, Urb, Xu, Qxu, Urb, Xu, Urb, Wwf, Urb, Urb, Urb, Urb, Urb, Xu, Urb, Urb, Ww, Urb, Urb, Urb, Urb, Xu, Urb, Xu, Xu, Urb, Xu, Urb, Urb, Xu, Xu, Xu, Xu
 Xu, Uu^Emf, Xu, Uu, Ur, Xu, Uu, Uu^Emf, Wo, Wo, Xu, Wwf, Wo, Wo, Wwf, Xu, Xu, Xu, Xu, Xu, Wwf, Urb, Urb, Urb, Urb, Urb, Xu, Xu, Urb, Ww, Urb, Urb, Urb, Xu, Urb, Urb, Xu, Xu, Urb, Urb, Xu, Xu, Urb, Xu, Xu, Xu
@@ -36,10 +33,10 @@ Xu, Xu, Xuc, Xu, Xu, Xu, Xu, Urb, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Urb, Urb, 
 Xu, Xu, Xu, Xu, Xu, Xu, Xu, Ww, Ww, 2 Urb, Ww, Urb, Xu, Xu, Xu, Urb, Xu, Xu, Xu, Wwf, Qxu, Urb, Xu, Urb, Xu, Xu, Urb, Xu, Xu, Wo, Xu, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Xu, Xu, Xu, Xu, Wo, Wo
 Xu, Xu, Xu, Xu, Ww, Xu, Xu, Wwf, Xu, Urb, Urb, Uh, Urb, Xu, Xu, Urb, Urb, Urb, Xu, Qxu, Urb, Xu, Urb, Urb, Wwf, Urb, Urb, Urb, Urb, Wo, Xu, Xu, Xu, Urb, Urb, Urb, Urb, Urb, Xu, Urb, Xu, Wwf, Xu, Xu, Wo, Wo
 Xu, Xu, Xu, Urb, Xu, Xu, Wwf, Urb, Ww, Ww, Xu, Xu, Xu, Urb, Xu, Xu, Urb, Xu, Xu, Xu, Urb, Urb, Urb, Xu, Wwf, Wwf, Urb, Xu, Xu, Urb, Urb, Urb, Wwf, Xu, Xu, Urb, Urb, Xu, Urb, Xu, Wo, Wo, Wwf, Wo, Wo, Wo
-Xu, Xu, Urb, Wwf, Ww, Urb, Xu, Xu, Xu, Xu, Xuc, Xu, Xu, Ww, Urb, Xu, Xu, Urb, Xu, Xu, Wwf, Wwf, Xu, Urb, Urb, Xu, Urb, Xu, Urb, Urb, Xu, Urb, Uu^Uf, Xu, Xu, Urb, Xu, Wwf, Xu, Xu, Xu, Wo, Xu, Xu, Wwf, Wo
-Xu, Xu, Wwf, Xu, Xu, Xu, Xu, Ww, Xu, Xu, Urb, Xu, Urb, Xu, Xu, 1 Urb, Xu, Urb, Qxu, Qxu, Xu, Wwf, Xu, Xu, Urb, Urb, Urb^Doo, Urb, Urb, Xu, Wwf, Xu, Uu^Uf, Urb, Xu, Urb, Urb, Xu, Urb, Wwf, Xu, Wwf, Wwf, Xu, Wwf, Wwf
+Xu, Xu, Urb, Wwf, Ww, Urb, Xu, Xu, Xu, Xu, Xuc, Xu, Xu, Ww, Urb, Xu, Xu, Urb, Xu, Xu, Wwf, Wwf, Xu, Urb, Urb, Xu, Urb, Xu, Urb, Urb, Xu, Urb, Tb^Tf, Xu, Xu, Urb, Xu, Wwf, Xu, Xu, Xu, Wo, Xu, Xu, Wwf, Wo
+Xu, Xu, Wwf, Xu, Xu, Xu, Xu, Ww, Xu, Xu, Urb, Xu, Urb, Xu, Xu, 1 Urb, Xu, Urb, Qxu, Qxu, Xu, Wwf, Xu, Xu, Urb, Urb, Urb^Doo, Urb, Urb, Xu, Wwf, Xu, Tb^Tf, Urb, Xu, Urb, Urb, Xu, Urb, Wwf, Xu, Wwf, Wwf, Xu, Wwf, Wwf
 Xu, Xu, Urb, Xu, Urb, Urb^Doo, Xu, Ww, Wwf, Urb, Xu, Urb, Xu, Urb, Urb, Xu, Urb, Wwf, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Urb, Xu, Xu, Xu, Urb, Xu, Urb, Xu, Xu, Qxu, Urb, Xu, Urb, Xu, Urb, Xu, Xu, Xu, Wwf, Xu, Wo
-Xu, Xu, Uu^Uf, Urb, Ww, Urb, Qxu, Urb, Xu, Ww, Wwf, Xu, Xu, Urb, Xu, Urb, Xu, Urb, Xu, Xu, Xu, Uu, Wwf, Qxu, Urb, Xu, Urb, Xu, Wwf, Urb, Xu, Urb, Urb, Qxu, Qxu, Xu, Urb, Urb, Xu, Urb, Urb^Emf, Xu, Urb, Xu, Xu, Xu
+Xu, Xu, Tb^Tf, Urb, Ww, Urb, Qxu, Urb, Xu, Ww, Wwf, Xu, Xu, Urb, Xu, Urb, Xu, Urb, Xu, Xu, Xu, Uu, Wwf, Qxu, Urb, Xu, Urb, Xu, Wwf, Urb, Xu, Urb, Urb, Qxu, Qxu, Xu, Urb, Urb, Xu, Urb, Urb^Emf, Xu, Urb, Xu, Xu, Xu
 Xu, Xu, Urb, Ww, Wwf, Urb, Xu, Qxu, Qxu, Urb, Uu^Emf, Uh, Xu, Urb, Urb, Xu, Urb, Urb, Xu, Xu, Xu, Urb, Xu, Urb, Wwf, Wwf, Ww, Wwf, Urb, Xu, Xu, Xu, Xu, Urb, Urb, Qxu, Urb, Qxu, Urb, Urb^Emf, Xu, Urb^Emf, Xu, Urb, Urb^Emf, Xu
 Xu, Xu, Urb, Xu, Xu, Urb, Xu, Xu, Qxu, Uu, Xu, Xu, Urb, Xu, Urb, Xu, Urb, Xu, Xu, Wwf, Ww, Wwf, Xu, Xu, Qxu, Qxu, Ww, Ww, Ww, Wwf, Wwf, Urb^Emf, Urb, Xu, Xu, Urb, Xu, Qxu, Urb, Urb, Wwf, Xu, Xu, Wwf, Qxu, Qxu
 Xu, Wwf, Xu, Xu, Xu, Urb, Urb, Urb, Urb, Ww, Xu, Xu, Urb^Doo, Urb, Urb, Xu, Xu, Qxu, Xu, Qxu, Wwf, Uu, Uu, Ww, Wwf, Qxu, Wwf, Wwf, Wwf, Wwf, Urb, Xu, Urb^Emf, Xu, Qxu, Xu, Urb, Urb, Urb, Qxu, Qxu, Urb, Urb, Qxu, Qxu, Qxu

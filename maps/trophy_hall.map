@@ -1,75 +1,72 @@
-border_size=1
-usage=map
-
-Xos         , Xos         , Xos         , Xos         , Xos         , Xos         , Xos         , Xos         , Xos         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Xos         , Xos         , Xos^Efs         , Xos^Efs         , Iwr         , Xos^Efs         , Xos^Efs         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Xos         , Xos^Efs         , Iwr         , Iwr         , Qxu         , Iwr         , Iwr         , Xos^Efs         , Xos         , Xos         , Xos         
-Xos         , Xos         , Xos         , Iwr         , Qxu         , Qxu^Bs\     , Iwr         , Qxu^Bs/     , Qxu         , Iwr         , Xos         , Xos         , Xos         
-Xos         , Xos         , Xos         , Iwr         , Iwr         , Qxu         , Qxu^Bs|     , Qxu         , Iwr         , Iwr         , Xos         , Xos         , Xos         
-Xos         , Xos         , Xos         , Xos         , Xos^Efs         , Iwr         , Iwr         , Iwr         , Xos^Efs         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos^Efs         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos^Efs         , Qxu         , Xos^Efs         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Qxu         , Xos         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Xos         , Qxu         , Xos         , Xos         
-Xos         , Qxu         , Iwr         , Qxu^Bs/     , Iwr         , Iwr         , Xos         , Iwr         , Iwr         , Qxu^Bs\     , Iwr         , Qxu         , Xos         
-Xos         , Qxu         , Qxu         , Qxu         , Iwr         , Iwr         , Iwr         , Iwr         , Iwr         , Qxu         , Qxu         , Qxu         , Xos         
-Xos         , Xos         , Xos         , Xos         , Xos         , Iwr         , Iwr         , Iwr         , Xos         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Xos         , Xos         , Xos         , Iwr         , 1 Iwr       , Iwr         , Xos         , Xos         , Xos         , Xos         , Xos         
-Xos         , Xos         , Xos         , Xos         , Xos         , Xos         , Iwr         , Xos         , Xos         , Xos         , Xos         , Xos         , Xos         
+Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
+Xos, Xos, Xos, Xos, Xos^Efs, Xos^Efs, Iwr, Xos^Efs, Xos^Efs, Xos, Xos, Xos, Xos
+Xos, Xos, Xos, Xos^Efs, Iwr, Iwr, Qxu, Iwr, Iwr, Xos^Efs, Xos, Xos, Xos
+Xos, Xos, Xos, Iwr, Qxu, Qxu^Bs\, Iwr, Qxu^Bs/, Qxu, Iwr, Xos, Xos, Xos
+Xos, Xos, Xos, Iwr, Iwr, Qxu, Qxu^Bs|, Qxu, Iwr, Iwr, Xos, Xos, Xos
+Xos, Xos, Xos, Xos, Xos^Efs, Iwr, Iwr, Iwr, Xos^Efs, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos^Efs, Iwr, Iwr, Iwr, Iwr, Iwr, Xos^Efs, Qxu, Xos^Efs, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos
+Xos, Xos, Qxu, Xos, Iwr, Iwr, Iwr, Iwr, Iwr, Xos, Qxu, Xos, Xos
+Xos, Qxu, Iwr, Qxu^Bs/, Iwr, Iwr, Xos, Iwr, Iwr, Qxu^Bs\, Iwr, Qxu, Xos
+Xos, Qxu, Qxu, Qxu, Iwr, Iwr, Iwr, Iwr, Iwr, Qxu, Qxu, Qxu, Xos
+Xos, Xos, Xos, Xos, Xos, Iwr, Iwr, Iwr, Xos, Xos, Xos, Xos, Xos
+Xos, Xos, Xos, Xos, Xos, Iwr, 1 Iwr, Iwr, Xos, Xos, Xos, Xos, Xos
+Xos, Xos, Xos, Xos, Xos, Xos, Iwr, Xos, Xos, Xos, Xos, Xos, Xos
