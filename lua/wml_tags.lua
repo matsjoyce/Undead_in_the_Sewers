@@ -29,6 +29,8 @@ function wesnoth.wml_actions.set_shroud(args)
     end
 end
 
+local RED <const>, GREEN <const>, BLUE <const> = 1, 2, 4
+
 function reflect(overlay, dir)
     if overlay == "Zmr-" then -- Facing south
         if dir == "n" then return "s"
@@ -71,39 +73,101 @@ function opposite_direction(dir)
     return dir
 end
 
-function raytrace(loc, dir, opacity, start_x, start_y, start_dir, do_damage)
+function get_rays(trace, x, y)
+    return trace[x * 10000 + y]
+end
+
+function add_ray(trace, x, y, dir, color)
+    if trace[x * 10000 + y] == nil then
+        trace[x * 10000 + y] = {n=0, ne=0, nw=0, s=0, se=0, sw=0}
+    end
+    trace[x * 10000 + y][dir] = trace[x * 10000 + y][dir] + color;
+end
+
+function all_hexes_in_trace(trace)
+    local key = nil
+    return function ()
+        local new_key, item = next(trace, key)
+        if item == nil then return end
+        key = new_key
+        y = key % 10000
+        x = (key - y) / 10000
+        return x, y, item
+    end
+end
+
+function raytrace(start_x, start_y, start_dir, color)
     local loc, dir = {start_x, start_y}, start_dir
+    local trace = {}
 
     repeat
         loc = wesnoth.map.get_direction(loc, dir)
         if not wesnoth.current.map:on_board(loc, true) then
             break
         end
-        wesnoth.interface.remove_hex_overlay(loc, {redraw=false})
-        wesnoth.interface.add_hex_overlay(loc, {image="scenery/ray-" .. opposite_direction(dir) .. ".png~O(" .. tostring(opacity) .. "%)", redraw=false})
+        add_ray(trace, loc[1], loc[2], opposite_direction(dir), color)
         local hex = wesnoth.map.get(loc)
         dir = reflect(hex.overlay_terrain, dir)
-        wesnoth.interface.add_hex_overlay(loc, {image="scenery/ray-" .. dir .. ".png~O(" .. tostring(opacity) .. "%)", redraw=false})
-        if do_damage then
-            wesnoth.wml_actions.harm_unit{{"filter", {x=loc[1], y=loc[2]}}, amount=40, fire_event=true, animate=true, damage_type="fire"}
-        end
+        add_ray(trace, loc[1], loc[2], dir, color)
     until( loc[1] == start_x and loc[2] == start_y and dir == start_dir )
+
+    return trace
+end
+
+function draw_raytrace(trace, opacity)
+    for x, y, rays in all_hexes_in_trace(trace) do
+        wesnoth.interface.remove_hex_overlay({x, y}, {redraw=false})
+        for dir, colors in pairs(rays) do
+            if colors ~= 0 then
+                print(colors)
+                wesnoth.interface.add_hex_overlay(
+                    {x, y},
+                    {
+                        image="scenery/ray-"
+                        .. dir
+                        .. ".png~O("
+                        .. tostring(opacity)
+                        .. "%)~CS("
+                        .. ((colors & RED ~= 0) and "0," or "-255,")
+                        .. ((colors & GREEN ~= 0) and "0," or "-255,")
+                        .. ((colors & BLUE ~= 0) and "0)" or "-255)"),
+                        redraw=false
+                    }
+                )
+            end
+        end
+    end
+    wesnoth.wml_actions.redraw{}
+end
+
+function damage_raytrace(trace)
+    for x, y, rays in all_hexes_in_trace(trace) do
+        wesnoth.wml_actions.harm_unit{{"filter", {x=x, y=y}}, amount=40, fire_event=true, animate=true, damage_type="fire"}
+    end
 end
 
 function wesnoth.wml_actions.raytrace(args)
     local start_x = args.start_x or wml.error("[raytrace] expects a start_x= attribute")
     local start_y = args.start_y or wml.error("[raytrace] expects a start_y= attribute")
     local start_dir = args.start_dir or wml.error("[raytrace] expects a start_dir= attribute")
+    local color_list = args.colors or wml.error("[raytrace] expects a colors= attribute")
+    local colors = 0
+    for _, color in ipairs(color_list:lower():split()) do
+        if color == "red" then colors = colors | RED
+        elseif color == "green" then colors = colors | GREEN
+        elseif color == "blue" then colors = colors | BLUE
+        end
+    end
+
+    local trace = raytrace(start_x, start_y, start_dir, colors)
 
     wesnoth.wml_actions.sound{name="laser-beam.wav"}
-
-    raytrace({start_x, start_y}, start_dir, 100, start_x, start_y, start_dir, true)
-    wesnoth.wml_actions.redraw{}
+    draw_raytrace(trace, 100)
+    damage_raytrace(trace)
     wesnoth.wml_actions.delay{time=200}
 
     for op=100,0,-10 do
-        raytrace({start_x, start_y}, start_dir, op, start_x, start_y, start_dir, false)
-        wesnoth.wml_actions.redraw{}
+        draw_raytrace(trace, op)
         wesnoth.wml_actions.delay{time=100}
     end
 end
