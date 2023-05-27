@@ -31,30 +31,54 @@ end
 
 local RED <const>, GREEN <const>, BLUE <const> = 1, 2, 4
 
-function reflect(overlay, dir)
-    if overlay == "Zmr-" then -- Facing south
+function parse_terrain_code(overlay)
+    local colors = 0
+    if #overlay ~= 4 or overlay:sub(1, 2) ~= "Zm" then
+        return 0, ""
+    end
+    if overlay[3]:lower() == "a" then
+        colors = RED | GREEN | BLUE
+    elseif overlay[3]:lower() == "r" then
+        colors = RED
+    elseif overlay[3]:lower() == "g" then
+        colors = GREEN
+    elseif overlay[3]:lower() == "b" then
+        colors = BLUE
+    end
+    if overlay[3]:match("%u") then
+        return colors, "r" .. overlay[4]
+    else
+        return colors, overlay[4]
+    end
+end
+
+function reflect(overlay, dir, color)
+    if overlay == nil then return dir end
+    local colors, overlay_dir = parse_terrain_code(overlay)
+    if (color & colors) == 0 then return dir end
+    if overlay_dir == "-" then -- Facing south
         if dir == "n" then return "s"
         elseif dir == "nw" then return "sw"
         elseif dir == "ne" then return "se"
         end
-    elseif overlay == "ZmR-" then -- Facing north
+    elseif overlay_dir == "r-" then -- Facing north
         if dir == "s" then return "n"
         elseif dir == "sw" then return "nw"
         elseif dir == "se" then return "ne"
         end
-    elseif overlay == "Zmr/" then -- Facing south-east
+    elseif overlay_dir == "/" then -- Facing south-east
         if dir == "nw" then return "s"
         elseif dir == "n" then return "se"
         end
-    elseif overlay == "Zmr\\" then -- Facing south-west
+    elseif overlay_dir == "\\" then -- Facing south-west
         if dir == "ne" then return "s"
         elseif dir == "n" then return "sw"
         end
-    elseif overlay == "ZmR/" then -- Facing north-west
+    elseif overlay_dir == "r/" then -- Facing north-west
         if dir == "s" then return "nw"
         elseif dir == "se" then return "n"
         end
-    elseif overlay == "ZmR\\" then -- Facing north-east
+    elseif overlay_dir == "r\\" then -- Facing north-east
         if dir == "s" then return "ne"
         elseif dir == "sw" then return "n"
         end
@@ -91,27 +115,25 @@ function all_hexes_in_trace(trace)
         if item == nil then return end
         key = new_key
         y = key % 10000
-        x = (key - y) / 10000
+        x = (key - y) // 10000
         return x, y, item
     end
 end
 
-function raytrace(start_x, start_y, start_dir, color)
+function raytrace(trace, start_x, start_y, start_dir, color)
     local loc, dir = {start_x, start_y}, start_dir
-    local trace = {}
 
-    repeat
+    while true do
         loc = wesnoth.map.get_direction(loc, dir)
-        if not wesnoth.current.map:on_board(loc, true) then
+        local existing_rays = get_rays(trace, loc[1], loc[2])
+        if not wesnoth.current.map:on_board(loc, true) or existing_rays ~= nil and (existing_rays[dir] & color) ~= 0 then
             break
         end
         add_ray(trace, loc[1], loc[2], opposite_direction(dir), color)
         local hex = wesnoth.map.get(loc)
-        dir = reflect(hex.overlay_terrain, dir)
+        dir = reflect(hex.overlay_terrain, dir, color)
         add_ray(trace, loc[1], loc[2], dir, color)
-    until( loc[1] == start_x and loc[2] == start_y and dir == start_dir )
-
-    return trace
+    end
 end
 
 function draw_raytrace(trace, opacity)
@@ -119,7 +141,6 @@ function draw_raytrace(trace, opacity)
         wesnoth.interface.remove_hex_overlay({x, y}, {redraw=false})
         for dir, colors in pairs(rays) do
             if colors ~= 0 then
-                print(colors)
                 wesnoth.interface.add_hex_overlay(
                     {x, y},
                     {
@@ -142,7 +163,15 @@ end
 
 function damage_raytrace(trace)
     for x, y, rays in all_hexes_in_trace(trace) do
-        wesnoth.wml_actions.harm_unit{{"filter", {x=x, y=y}}, amount=40, fire_event=true, animate=true, damage_type="fire"}
+        local all_colors = 0
+        for _, colors in pairs(rays) do
+            all_colors = all_colors | colors
+        end
+        local num_rays = 0
+        if (all_colors & RED) ~= 0 then num_rays = num_rays + 1 end
+        if (all_colors & GREEN) ~= 0 then num_rays = num_rays + 1 end
+        if (all_colors & BLUE) ~= 0 then num_rays = num_rays + 1 end
+        wesnoth.wml_actions.harm_unit{{"filter", {x=x, y=y}}, amount=20 * num_rays, fire_event=true, animate=true}
     end
 end
 
@@ -151,22 +180,24 @@ function wesnoth.wml_actions.raytrace(args)
     local start_y = args.start_y or wml.error("[raytrace] expects a start_y= attribute")
     local start_dir = args.start_dir or wml.error("[raytrace] expects a start_dir= attribute")
     local color_list = args.colors or wml.error("[raytrace] expects a colors= attribute")
-    local colors = 0
+    local trace = {}
+
     for _, color in ipairs(color_list:lower():split()) do
-        if color == "red" then colors = colors | RED
-        elseif color == "green" then colors = colors | GREEN
-        elseif color == "blue" then colors = colors | BLUE
+        if color == "red" then
+            raytrace(trace, start_x, start_y, start_dir, RED)
+        elseif color == "green" then
+            raytrace(trace, start_x, start_y, start_dir, GREEN)
+        elseif color == "blue" then
+            raytrace(trace, start_x, start_y, start_dir, BLUE)
         end
     end
 
-    local trace = raytrace(start_x, start_y, start_dir, colors)
-
     wesnoth.wml_actions.sound{name="laser-beam.wav"}
-    draw_raytrace(trace, 100)
+    draw_raytrace(trace, 100, num_colors)
     damage_raytrace(trace)
-    wesnoth.wml_actions.delay{time=200}
+    wesnoth.wml_actions.delay{time=500}
 
-    for op=100,0,-10 do
+    for op=100,0,-20 do
         draw_raytrace(trace, op)
         wesnoth.wml_actions.delay{time=100}
     end
